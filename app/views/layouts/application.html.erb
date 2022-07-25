@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <h1>YOUTUBE</h1>  
+    <h3> Post your video </h3>    
+
+    <% if current_user %>
+      <P><%= current_user.email %></P>
+      <%= link_to 'Exit', destroy_user_session_path, method: :delete %>
+    <% else %>
+      <p>no user logged in</p>
+      <%= link_to 'Log in', new_user_session_path %>
+    <% end %>
+
+    <p class="notice" style="background: blue;color:white"><%= notice %></p>
+    <p class="alert" style="background: red;color:white"><%= alert %></p>
+
+    <hr>
+
+    <%= yield %>
+
+  </body>
+</html>

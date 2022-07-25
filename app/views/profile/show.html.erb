@@ -1,0 +1,20 @@
+
+<h1><%= @video.title %></h1>
+
+<%= video_tag url_for(@video.video), style:"width: 75%; height: auto", controls: true %>
+
+<%= button_to "Like", profile_like_path(@profile.email, @video.id) %>
+
+<%= @video.likes %>
+
+<%= link_to 'Back', profile_index_path %>
+
+
+
+
+
+
+
+
+
+
