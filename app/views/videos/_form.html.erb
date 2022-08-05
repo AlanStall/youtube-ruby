@@ -13,17 +13,12 @@
 
   <div class="field">
     <%= form.label :title %>
-    <%= form.text_field :title %>
+    <%= form.text_field :title, style:"width: 500px" %>
   </div>
 
   <div class="field">
     <%= form.label :description %>
-    <%= form.text_area :description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :likes %>
-    <%= form.number_field :likes %>
+    <%= form.text_area :description, style:"width: 500px; height: 100px" %>    
   </div>
 
   <%= form.file_field :video %> 

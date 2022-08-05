@@ -24,8 +24,7 @@ class VideosController < ApplicationController
   # POST /videos or /videos.json874
   def create
     @video = Video.new(video_params)
-    @video.user = current_user 
-    @video.likes = 0   
+    @video.user = current_user     
 
     respond_to do |format|
       if @video.save

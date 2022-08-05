@@ -11,18 +11,13 @@ class ProfileController < ApplicationController
 
   def like
     @profile = User.find_by!(email: params[:email])
-    @video = @profile.videos.find(params[:video_id])
-    @video.likes = @video.likes + 1 
-    @video.likes   
-    @video.save
+    @video = @profile.videos.find(params[:video_id])    
     redirect_to profile_show_path(@profile.email, @video.id, @video.title)
   end
 
   def dislike
     @profile = User.find_by!(email: params[:email])
-    @video = @profile.videos.find(params[:video_id])
-    @video.likes = @video.likes - 1
-    @video.save
+    @video = @profile.videos.find(params[:video_id])    
     redirect_to profile_show_path(@profile.email, @video.id)
   end
 

@@ -10,9 +10,10 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body style="background-color: whitesmoke; color: light">
 
-    <h1>YOUTUBE</h1>  
+    <h1 style="color: royalblue; font-size: 32px; margin-top: 80px">YOUTUBE</h1>      
+    <br>    
     <h3> Post your video </h3>    
 
     <% if current_user %>
@@ -23,8 +24,8 @@
       <%= link_to 'Log in', new_user_session_path %>
     <% end %>
 
-    <p class="notice" style="background: blue;color:white"><%= notice %></p>
-    <p class="alert" style="background: red;color:white"><%= alert %></p>
+    <p class="notice" style="background: blue; color:white"><%= notice %></p>
+    <p class="alert" style="background: red; color:white"><%= alert %></p>
 
     <hr>
 

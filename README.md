@@ -1,3 +1,3 @@
 # README
 
-youtube-ruby on rails-incomplete...
+youtube-clone-ruby on rails-incomplete... (to add likes)
