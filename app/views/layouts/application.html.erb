@@ -18,9 +18,11 @@
 
     <% if current_user %>
       <P><%= current_user.email %></P>
+
       <%= link_to 'Exit', destroy_user_session_path, method: :delete %>
     <% else %>
       <p>no user logged in</p>
+      
       <%= link_to 'Log in', new_user_session_path %>
     <% end %>
 

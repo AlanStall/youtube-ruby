@@ -1,7 +1,5 @@
-# README
+# Youtube-ruby
 
-<<<<<<< HEAD
-youtube-clone-ruby on rails-incomplete... (to add likes)
-=======
-youtube-ruby_on_rails-incomplete...
->>>>>>> eb18f364e8c8c1b4c728abcc0f163ecfd5c1b29e
+Aplicação em Ruby On Rails onde o usuário pode logar utilizando e-mail e senha (por meio de Devise - for Rails based on Warden - https://github.com/heartcombo/devise). Ele pode adicionar vídeos e incluir informações. Em qualquer momento pode editar as informações ou excluir algum vídeo da aplicação. Segue apresentação pelo link abaixo:
+
+https://www.youtube.com/watch?v=qD__6vyztK8
